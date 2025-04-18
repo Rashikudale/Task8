@@ -1,0 +1,73 @@
+# Hello Java Maven 🚀
+
+A simple Java "Hello, World!" application built using **Maven** and integrated with **Jenkins** for Continuous Integration (CI).
+
+## 📂 Project Structure
+## 🛠 Technologies Used
+
+- Java (JDK 8+)
+- Maven (3.8.6)
+- Jenkins (Freestyle Project)
+- Docker (optional for Jenkins)
+
+
+
+## ⚙️ Setup Instructions
+
+### 1. Prerequisites
+
+- Java JDK 8 or 11
+- Maven
+- Jenkins (installed locally or via Docker)
+- Git (optional)
+
+### 2. Clone the Project
+
+
+git clone https://github.com/your-username/hello-java-maven.git
+cd hello-java-maven
+
+## HelloWorld.java
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.hello.java.maven;
+
+/**
+ *
+ * @author admin
+ */
+public class HelloJavaMaven {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+
+## pom.xml
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>hello</artifactId>
+    <version>1.0</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
